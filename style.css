@@ -1,0 +1,123 @@
+/* bold 700 regular 400 
+font-family: 'Work Sans', sans-serif;
+#15202B  --> BG
+#1D9BF0 --> BUTTON
+#F7F9F9 --> TEXT
+*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-family: 'Work Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #F5F5F5;
+    color:#F7F9F9;
+}
+a{
+    color:#F7F9F9;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+}
+/*mobile*/
+.side-mobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:#15202B ;
+    width: 70px;
+    height: 70vh;
+    margin: 80px auto;
+    border-radius: 25px;
+    font-size: 12px;
+}
+.side-mobile .menu-item-mb{
+    width: 100%;
+    height: 27px;
+    padding-top: 13px;
+    text-align: center;
+}
+.btn-mobile{
+    width: 40px;
+    height: 40px;
+    color: #F7F9F9;
+    font-weight: 800;
+    text-align: center;
+    padding:auto;
+    background-color:#1D9BF0;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 15px;
+}
+.side-mobile li:hover{
+    background-color: #1D9BF0;
+}
+.side-mobile li:first-child:hover{
+    background-color:#15202B  ;
+}
+.side-mobile li:last-child:hover{
+    background-color: #15202B ;
+}
+.active-mb{
+    background-color: #1D9BF0;
+}
+/*desktop*/
+.side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:#15202B ;
+    width: 220px;
+    height: 70vh;
+    margin: 80px auto;
+    border-radius: 25px;
+    font-size: 12px;
+}
+.side .menu{
+    margin-top: 25px;
+}
+.side .menu-item{
+    margin:25px 30px;
+    position: relative;
+    letter-spacing: 0.3px;
+}
+.side .menu-item a{
+    position: absolute;
+    left: 30px;
+}
+.fa-twitter{
+    color: #1D9BF0;
+}
+.menu .menu-item:last-child button{
+    width: 160px;
+    color: #F7F9F9;
+    font-weight: 800;
+    text-align: center;
+    padding:13px 50px;
+    background-color:#1D9BF0;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 11px;
+}
+.menu a:hover{
+    font-weight: 800;
+}
+.active{
+    font-weight: 800;
+}
+.tw-logo{
+    position: relative !important;
+    margin-left: -29px !important;
+}
